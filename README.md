@@ -26,7 +26,7 @@ FB_GROUP_ID = your_fb_group_id
 
 `VK_TOKEN` - [инструкция](https://devman.org/qna/63/kak-poluchit-token-polzovatelja-dlja-vkontakte/), 
 
-`VK_ALBUM_ID` - если зайти на страницу с альбомом, в адресной строке будет ссылка вида: https://vk.com/public{group_id}?z=album-{group_id}_{album_id},
+`VK_ALBUM_ID` - для публикации картинки в посте, необходимо предварительно создать альбом для фотографий. Если зайти на страницу с альбомом, в адресной строке будет ссылка вида: https://vk.com/public{group_id}?z=album-{group_id}_{album_id},
 
 `VK_GROUP_ID` - [инструкция](https://regvk.com/id/),
 
