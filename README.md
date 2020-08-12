@@ -10,11 +10,11 @@
  ```
 VK_LOGIN = your_vk_login
 VK_TOKEN = your_vk_token
-TG_TOKEN = your_tg_token
-
-TG_CHAT_ID = your_tg_chat_id
 VK_ALBUM_ID = your_vk_album_id
 VK_GROUP_ID = your_vk_group_id
+
+TG_TOKEN = your_tg_token
+TG_CHAT_ID = your_tg_chat_id
 
 FB_TOKEN = your_fb_token
 FB_GROUP_ID = your_fb_group_id
@@ -26,13 +26,13 @@ FB_GROUP_ID = your_fb_group_id
 
 `VK_TOKEN` - [инструкция](https://devman.org/qna/63/kak-poluchit-token-polzovatelja-dlja-vkontakte/), 
 
-`TG_TOKEN` - [инструкция](https://smmplanner.com/blog/otlozhennyj-posting-v-telegram/), 
-
-`TG_CHAT_ID` - ссылка на канал, например: @dvmn_flood, 
-
 `VK_ALBUM_ID` - если зайти на страницу с альбомом, в адресной строке будет ссылка вида: https://vk.com/public{group_id}?z=album-{group_id}_{album_id},
 
 `VK_GROUP_ID` - [инструкция](https://regvk.com/id/),
+
+`TG_TOKEN` - [инструкция](https://smmplanner.com/blog/otlozhennyj-posting-v-telegram/), 
+
+`TG_CHAT_ID` - ссылка на канал, например: @dvmn_flood, 
 
 `FB_TOKEN` - [инструкция](https://developers.facebook.com/docs/graph-api/explorer/),
 
