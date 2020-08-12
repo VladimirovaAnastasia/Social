@@ -66,6 +66,7 @@ def post_vkontakte(post_img, post_text):
                   message=post_text,
                   attachments='photo-' + str(VK_GROUP_ID) + '_' + str(media_id))
 
+
 if __name__ == '__main__':
     parser = create_parser()
     args = parser.parse_args()
