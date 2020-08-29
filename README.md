@@ -8,16 +8,14 @@
  
  Для работы скрипта необходимы ваши данные от аккаунтов социальных сетей. Чтобы их указать в папке со скриптом необходимо создать файл с именем `.env`. Открыв его с помощью любого текстового редактора, необходимо указать данные в следующем формате (без кавычек):
  ```
-VK_LOGIN = your_vk_login
-VK_TOKEN = your_vk_token
-VK_ALBUM_ID = your_vk_album_id
-VK_GROUP_ID = your_vk_group_id
-
-TG_TOKEN = your_tg_token
-TG_CHAT_ID = your_tg_chat_id
-
-FB_TOKEN = your_fb_token
-FB_GROUP_ID = your_fb_group_id
+VK_LOGIN=your_vk_login
+VK_TOKEN=your_vk_token
+VK_ALBUM_ID=your_vk_album_id
+VK_GROUP_ID=your_vk_group_id
+TG_TOKEN=your_tg_token
+TG_CHAT_ID=your_tg_chat_id
+FB_TOKEN=your_fb_token
+FB_GROUP_ID=your_fb_group_id
 ```
 
 Как получить данные параметры: 
