@@ -27,7 +27,7 @@ def post_telegram(tg_token, tg_chat_id, post_img, post_text):
 def post_facebook(fb_token, fb_group_id, post_img, post_text):
     with open(post_img, 'rb') as post_img:
         files = {'upload_file': post_img}
-        url = urljoin('https://graph.facebook.com/', fb_group_id, '/photos')
+        url = urljoin('https://graph.facebook.com/', f'{fb_group_id}/photos')
         data = {
             "access_token": fb_token,
             "caption": post_text}
@@ -70,6 +70,6 @@ if __name__ == '__main__':
     VK_ALBUM_ID = os.getenv("VK_ALBUM_ID")
     VK_GROUP_ID = os.getenv("VK_GROUP_ID")
 
-    post_telegram(TG_TOKEN, TG_CHAT_ID, post_img, post_text)
+    #post_telegram(TG_TOKEN, TG_CHAT_ID, post_img, post_text)
     post_facebook(FB_TOKEN, FB_GROUP_ID, post_img, post_text)
-    post_vkontakte(VK_LOGIN, VK_TOKEN, VK_ALBUM_ID, VK_GROUP_ID, post_img, post_text)
+    #post_vkontakte(VK_LOGIN, VK_TOKEN, VK_ALBUM_ID, VK_GROUP_ID, post_img, post_text)
