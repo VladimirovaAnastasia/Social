@@ -42,12 +42,14 @@ def post_vkontakte(vk_login, vk_token, vk_album_id, vk_group_id, post_img, post_
     vk_session._auth_token()
 
     upload = vk_api.VkUpload(vk_session)
-    photo = upload.photo(
+    photo_info = upload.photo(
         post_img,
         album_id=vk_album_id,
         group_id=vk_group_id
     )
-    media_id = photo[0]['id']
+
+    for item in photo_info:
+        media_id = item.get('id')
 
     vk = vk_session.get_api()
     vk.wall.post(owner_id=f"-{vk_group_id}",
@@ -70,6 +72,6 @@ if __name__ == '__main__':
     VK_ALBUM_ID = os.getenv("VK_ALBUM_ID")
     VK_GROUP_ID = os.getenv("VK_GROUP_ID")
 
-    #post_telegram(TG_TOKEN, TG_CHAT_ID, post_img, post_text)
+    post_telegram(TG_TOKEN, TG_CHAT_ID, post_img, post_text)
     post_facebook(FB_TOKEN, FB_GROUP_ID, post_img, post_text)
-    #post_vkontakte(VK_LOGIN, VK_TOKEN, VK_ALBUM_ID, VK_GROUP_ID, post_img, post_text)
+    post_vkontakte(VK_LOGIN, VK_TOKEN, VK_ALBUM_ID, VK_GROUP_ID, post_img, post_text)
